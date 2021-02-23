@@ -1,0 +1,5 @@
+<div class="header">
+    <button [disabled] = "user" (click)="login()">Login</button>
+    <span>{{user}}</span>
+    <button [disabled] = "!user" (click)="logout()">Logout</button>
+</div>
