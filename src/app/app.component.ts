@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'immoApp';
+
+  goods: [];
+
+  constructor(private goodService: GoodService) {
+    this.goods = this.goodService.goods;
+  }
 }
